@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+:root {
+    --dark-color: #2d2d2d;
+    --light-color: #f2f2f2;
+    --highlight-color: #2E6287;
+}
+
+
+* {
+    box-model: border-box;
+}
+
+.profile {
+    text-align: center;
+    vertical-align: middle;
+}
+
+body {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-family: "Oswald";
+    font-size: 3.0em;
+    line-height: 1.2;
+    padding: 1.0em;
+}
+
+.insta {
+    text-align: center;
+    vertical-align: middle;
+}
+
+a:active,
+a:link,
+a:hover,
+a:visited {
+    color: var(--highlight-color);
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: var(--light-color);
+        color: var(--dark-color);
+    }
+}
